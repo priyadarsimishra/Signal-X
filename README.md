@@ -19,6 +19,15 @@
 This project was designed to aid with simplicity in mind. It is designed to recommend 
 the user whether to buy, hold, or sell a particular stock. Of course, **NO USER SHOULD**
 **TAKE THIS RECOMMENDATION AS SOUND FINANCIAL ADVICE. THIS IS FOR EDUCATIONAL PURPOSES.**
+We were inspired to create this project because we saw a need to make investing more 
+accessible. And throughout the development of this project, we experienced how difficult it
+is to really get software deployed. We originally planned to have a complicated backend 
+setup but were greatly limited by the available free APIs and easy to integrate databases. 
+We ended up building the project using React for the easier Frontend development and a Python 
+LSTM model for the intelligence behind the "advice". However, we ran into issues in connecting
+the two. Originally, we had not structured the Python file in a way where it could be invoked 
+by the frontend, so we needed to restructure it. But it did end up working. However, we 
+do believe there is of course more work to do!
 
 
 ## Disclaimer
