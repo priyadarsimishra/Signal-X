@@ -18,7 +18,7 @@ class LSTMModel:
     def get_prediction(self, company):
         date_today = datetime.datetime.now()
         year = date_today.strftime("%Y")
-        month = date_today.strftime("%m")
+        month = date_today.strftime("%m") 
         day = date_today.strftime("%d")
 
         past = "2004-08-19"
