@@ -9,12 +9,9 @@
 ---
 ## Authors
 
-**Akshay Gaitonde** 
-* *See my professional profile on* [LinkedIn][linkedin-urlak]
-**Priyadarsi Mishra** 
-* *See my professional profile on* [LinkedIn][linkedin-urlp]
-**Arjun Ankad** 
-* *See my professional profile on* [LinkedIn][linkedin-urlar]
+[Akshay Gaitonde][linkedin-urlak]
+[Priyadarsi Mishra][linkedin-urlp]
+[Arjun Ankad][linkedin-urlar]
 
 
 ## Purpose
@@ -41,15 +38,15 @@ other Content made available to you through the Site.
 
 ## Deployment
 
-Currently, the project is deployed on . This may change in the future. 
+Currently, the project is deployed on Vercel. This may change in the future. 
 
 
 ## Built With
 
 * [Vercel](https://vercel.com/) - Frontend Hosting
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
+* [Heroku ](https://devcenter.heroku.com/) - To deploy on Heroku
 * [React JS](https://react.dev/) - Frontend Framework
-* [Python 3](https://www.python.org/) - Backend Launguage
+* [Python 3](https://www.python.org/) - Backend Language
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Backend Framework
 
 
@@ -60,8 +57,8 @@ Currently, the project is deployed on . This may change in the future.
 
 <!-- Markdown link & img dfn's -->
 
-[header-url]: github-template.png
-[header-link]: https://github.com/priyadarsimishra/Signal-X
+[header-url]: banner1.png
+[header-link]: https://github.com/priyadarsimishra/Signal-X/blob/main/banner1.png?raw=true
 
 [repository-url]: https://github.com/priyadarsimishra/Signal-X
 
