@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function TradingViewWidget() {
+export default function TradingViewWidget({ticker}) {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -29,7 +29,7 @@ export default function TradingViewWidget() {
         if (document.getElementById('tradingview_dac5d') && 'TradingView' in window) {
           new window.TradingView.widget({
             autosize: true,
-            symbol: "NASDAQ:AAPL",
+            symbol: ticker,
             interval: "W",
             timezone: "America/Chicago",
             theme: "dark",

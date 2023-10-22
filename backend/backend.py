@@ -1,11 +1,18 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS, cross_origin
+import yfinance as yf
+import numpy as np
+import pandas as pd
 from model import LSTMModel
 import json
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/api/get_prediction/<ticker>', methods=['GET'])
-def get_data(ticker):
+@cross_origin()
+def get_pred(ticker):
     lstm = LSTMModel()
     data = lstm.get_prediction(ticker)
     predicted = data[0]
@@ -34,6 +41,22 @@ def get_data(ticker):
         result = "buy"
 
     return json.dumps({ "result": result })
+
+
+@app.route('/api/get_details/<ticker>', methods=['GET'])
+@cross_origin()
+def get_data(ticker):
+    data = yf.Ticker(ticker)
+    
+    return json.dumps({ 
+        "short_name": data.info["shortName"], 
+        "long_name":  data.info["shortName"], 
+        "business_summary": data.info["longBusinessSummary"],
+        "city": data.info["city"],
+        "state": data.info["state"],
+        "CEO": data.info["companyOfficers"][0],
+        "market_cap": data.info["marketCap"]
+    })
 
 @app.route('/')
 def index():
