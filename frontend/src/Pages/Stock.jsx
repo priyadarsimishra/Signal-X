@@ -48,7 +48,7 @@ const Stock = () => {
                     <img src={Buy} className='buy-icon'/> 
                     <span className='spanner'>
                         <h1 className='buy'>Buy</h1>
-                        <h1 className='sell'>Sell</h1>
+                        <h1 className='sell'>Sell</h1> 
                     </span>
 
                     {/* <img src={Hold}/>
